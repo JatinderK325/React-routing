@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Welcome from './pages/Welcome';
 import Products from './pages/Products';
 import MainHeader from './components/MainHeader';
@@ -13,6 +13,9 @@ function App() {
         React-router matches the path from the start hence it gives both the components on the screen.
         hence, to make only one route active, Switch is used. with this, react-router will go through from top to bottom. when it finds the first match, it will display the route and stop searching.*/}
         <Switch>
+          <Route path='/' exact>
+            <Redirect to='/welcome' />
+          </Route>
           <Route path="/welcome">
             <Welcome />
           </Route>
