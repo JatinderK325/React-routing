@@ -1,6 +1,5 @@
 // import { Link } from "react-router-dom";
 // Link creates an anchor link, captures the click and prevent the browser default.
-
 // NavLink do the same as Link but more than that with NavLink, we can also set css class on the active anchor item to show user whick link is active. We just need to tell NavLink 'which class to add'.
 import { NavLink } from "react-router-dom";
 import classes from './MainHeader.module.css';
